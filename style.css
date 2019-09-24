@@ -38,6 +38,7 @@ body {
 .header-cosmos {
 	width: 130px;
     font-size: 0.9em;
+    margin-top: -5px;
 }
 
 .header-middle {
@@ -83,6 +84,63 @@ body {
 
 }
 
+/* ----- CONTENT-ARTICLE-Header ----- */
+.article-header {
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+	height: 70px;
+}
+.article-header h5 {
+	font-size: 17px;
+	font-weight: bolder;
+	position: relative;
+	top: -5px;
+}
+.article-header h5 a {
+	color: #000;
+	text-decoration-color: #ccc;
+}
+.article-header h5 a:hover { text-decoration: none; }
+
+.article-header-date {
+	float: left;
+	font-size: 14px;
+	width: 40%
+}
+
+.article-header-date p { padding-top: 5px; }
+
+.article-header-buttons {
+	justify-content: space-between;
+	display: flex;
+	float: right;
+	width: 25%;
+	overflow: hidden;	/*float bug fix*/
+}
+
+.article-header-icon svg:not(.css-ubw31m) {
+	vertical-align: middle;
+    width: 15px;
+    background-color: #eee;
+    border: 1px #eee solid;
+    border-radius: 100%;
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+}
+
+.css-4brsb6:hover {
+	background-color: #000;
+}
+
+.bookmark svg { vertical-align: middle; }
+
+.comments {
+	background-image: url("https://img.icons8.com/small/32/000000/topic--v1.png");
+	font-size: 12px;
+	width: 30px;
+	text-align: center;
+}
+/* ----- CONTENT-ARTICLE ----- */
 .article-image-caption{
 	width: 80%;
 }
@@ -101,8 +159,9 @@ body {
 	font-size: 0.8125rem;
 }
 
-.article-text{
-	width: 60%;
+.article-text,
+.article-header {
+	width: 35%;
 	font-size: 1.25rem;
 	line-height: 1.875rem;
 	font-family: nyt-imperial,georgia,'times new roman',times,serif;
