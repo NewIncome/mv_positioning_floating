@@ -3,16 +3,67 @@
 	padding: 0;
 }
 
+/* ----- HEADER ----- */
+.header {
+	background: #fff;
+	border-bottom: 1px solid #e2e2e2;
+	position: fixed;
+	padding-top: 10px;
+	width: 100vw;
+}
+
+.header-buttons {
+	float: left;
+	padding-left: 9%;
+	padding-top: 
+}
+
 .header-link {
 	float: left;
-	height: 80px;
-	width: 50px;
+	width: 16px;
 }
+
+.header-link a {
+	color: #000;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.header-search {
+	padding: 0 20px;
+}
+.header-cosmos {
+	width: 130px;
+    font-size: 0.9em;
+}
+
 .header-middle {
-	height: 80px;
-	width: 140px;
+	margin: 0 auto;
+	width: 195px;
+}
+.header-subscribe {
+	position: absolute;
+	top: 4px;
+	right: 9%;
 }
 .header-button {
-	float: right;
-	right: 0;
+	background-color: #6288a5;
+	border: 1px solid #326891;
+	border-radius: 3px;
+	color: #fff; 
+	font-size: 0.65em;
+	font-weight: bold;
+	padding: 11px 12px 8px; 
 }
+
+/* ----- INTRO ----- */
+.intro {
+	margin: 0 18%;
+	padding-top: 100px;
+}
+
+.intro figure,
+.intro figure img {
+	width: 100%;
+}
+
+/* ----- CONTENT - ARTICLE ----- */
