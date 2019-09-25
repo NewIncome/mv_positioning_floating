@@ -129,7 +129,7 @@ body {
     height: 15px;
 }
 
-.article-header-icon svg:hover{
+.article-header-icon svg:not(.css-ubw31m):hover{
 	background-color: #fff;
 	border: 1px solid #ccc;
 }
@@ -234,6 +234,16 @@ body {
 }
 
 /*---- ARTICLE FOOTER ----*/
+.footer::before {
+
+    border-top: 2px solid rgb(226, 226, 226);
+    content: "";
+    height: 2px;
+    display: block;
+    margin-top: 0;
+    border-bottom: 1px solid rgb(226, 226, 226);
+
+}
 .article-footer{
 	display: flow-root;
 	width: calc(100% - 40px);
@@ -266,6 +276,35 @@ body {
 
 .footer-comments button:hover {
 	background-color: rgb(50, 104, 145);
+}
+
+.footer-col {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+
+.footer-col .col{
+	width: calc(100% / 6);
+}
+
+.footer-col div:last-child {
+    border-left: 1px solid rgb(226, 226, 226);
+    padding-left: 25px;
+}
+
+.col ul {
+	list-style: none;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.col ul li a:hover {
+    text-decoration: underline;
 }
 
 .social-share-btn {
@@ -371,11 +410,30 @@ body {
 }
 
 .related-left {
-	width: 60%;
+	width: 80%;
+	max-width: 852px;
 }
 
 .related-right{
-	width: 40%;
+	width: calc(-38.3333px + 33.3333vw);
+}
+
+.related-article-title {
+	font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+}
+
+.related-article-title a{
+	text-decoration: none;
+	color: #000;
+}
+
+.related-article-date {
+	font-family: nyt-franklin, helvetica, arial, sans-serif;
+	color: rgb(153, 153, 153);
+	letter-spacing: 0.3px;
+	font-size: 0.75rem;
+	line-height: 1.25rem;
+	font-weight: 500;
 }
 
 .content-header {
@@ -390,14 +448,21 @@ body {
 }
 
 .col:not(.most-popular) .content .content-item {
-	width: 30%;
+	width: 32%;
 	padding: 5px 10px 0 0;
 }
 
 .content-item img {
 	width: 100%;
 }
-.content-item 
+
+.content-item-figcap{
+	color: rgb(153, 153, 153);
+	text-align: right;
+	line-height: 1.23em;
+	font-size: 0.625rem;
+	margin: 3px 0px 0px;
+}
 
 .col {
 	margin-top: 20px;
@@ -405,6 +470,7 @@ body {
 
 .col.editors-pick {
 	border-top: 1px solid #000;
+	margin-top: 20px;
 }
 
 .related-title a {
@@ -417,18 +483,20 @@ body {
 	height: 100%;
 }
 
-.most-popular .content .content-item{
-	width: 100%;
-	border-top: 1px solid rgb(226, 226, 226);
-}
-
 .most-popular .content {
 	display: flex;
 	flex-direction: column;
 	height: calc(100% - 75px);
 	justify-content: space-between;
 }
-.most-popular .content-item a {
+
+.most-popular .content .content-item{
+	width: 100%;
+	border-top: 1px solid rgb(226, 226, 226);
+	padding: 15px 0;
+}
+
+.most-popular .content .content-item a {
 	font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
 	text-decoration: none;
 	color: #121212;
