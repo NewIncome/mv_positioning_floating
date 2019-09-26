@@ -244,6 +244,20 @@ body {
     border-bottom: 1px solid rgb(226, 226, 226);
 
 }
+
+.footer {
+	max-width: 1200px;
+	margin: 0 auto 25px;
+	padding-bottom: 20px;
+
+}
+
+.footer-logo-img {
+	width: 184px;
+	height: 44px;
+	vertical-align: middle;
+	display: block;
+}
 .article-footer{
 	display: flow-root;
 	width: calc(100% - 40px);
@@ -280,8 +294,6 @@ body {
 
 .footer-col {
 	display: flex;
-	max-width: 1200px;
-	margin: 0 auto;
 	justify-content: space-between;
 }
 
@@ -291,16 +303,44 @@ body {
 
 .footer-col div:last-child {
     border-left: 1px solid rgb(226, 226, 226);
-    padding-left: 25px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 0%;
 }
 
+.footer-col div:last-child ul:nth-last-child(-n+2) li a {
+	font-size: 11px;
+	vertical-align: baseline;
+
+}
+
+.footer-col div:last-child ul:last-child {
+    border-top: 1px solid rgb(226, 226, 226);
+    padding: 10px 0 0;
+    margin: 2px 0 0;
+}
 .col ul {
 	list-style: none;
+}
+
+.col ul h3 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 700;
+    height: 25px;
+    line-height: 15px;
+    text-transform: uppercase;
+    width: 150px;
 }
 
 .col ul li a {
     text-decoration: none;
     color: #000;
+    text-transform: capitalize;
+    line-height: 21px;
+    font-weight: 500;
 }
 
 .col ul li a:hover {
@@ -465,7 +505,7 @@ body {
 }
 
 .col {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .col.editors-pick {
