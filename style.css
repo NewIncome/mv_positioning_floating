@@ -1,4 +1,8 @@
-
+/*
+When I started this project, 
+only me and god knew what this code did
+now only god knows
+*/
 
 * {
   margin: 0;
@@ -93,6 +97,18 @@ body {
   vertical-align: baseline;
 }
 
+.related-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.subs-col-form a {
+  color: #326891;
+  font-size: 0.625em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 /* ----- CONTENT-ARTICLE-Header ----- */
 
 .article-header {
@@ -166,9 +182,7 @@ body {
 
 /* ----- CONTENT-ARTICLE ----- */
 
-.article-image-caption {
-  width: 80%;
-}
+.article-image-caption { width: 80%; }
 
 .article-image-caption span {
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
@@ -207,6 +221,10 @@ body {
   max-width: 600px;
   width: calc(100% - 40px);
   margin: 0 auto 16px;
+}
+
+.content-item img {
+  width: 100%;
 }
 
 .inarticle-image figure,
@@ -326,6 +344,11 @@ body {
 .footer-col {
   display: flex;
   justify-content: space-between;
+  font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
+.col {
+  margin-top: 15px;
 }
 
 .footer-col .col {
@@ -339,6 +362,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex: 1 1 0%;
+}
+
+.most-popular .content .content-item a {
+  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
+  text-decoration: none;
+  color: #121212;
+  font-weight: 400;
 }
 
 .footer-col div:last-child ul:nth-last-child(-n+2) li a {
@@ -367,10 +397,6 @@ body {
 
 .footer-col div:last-child ul:nth-child(2) svg {
   padding-right: 8px;
-}
-
-.footer-col {
-  font-family: nyt-franklin, helvetica, arial, sans-serif;
 }
 
 .col h3 {
@@ -498,13 +524,6 @@ body {
   font-size: 0.7em;
 }
 
-.subs-col-form a {
-  color: #326891;
-  font-size: 0.625em;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
 .related-title {
   margin: 15px auto 20px;
 }
@@ -548,18 +567,27 @@ body {
   padding-top: 15px;
 }
 
+.most-popular .content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 75px);
+  justify-content: space-between;
+}
+
 .col:not(.most-popular) .content {
   display: flex;
   flex-wrap: wrap;
 }
 
+.most-popular .content .content-item {
+  width: 100%;
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 15px 0;
+}
+
 .col:not(.most-popular) .content .content-item {
   width: calc((100% - 30px)/3);
   padding: 5px 10px 0 0;
-}
-
-.content-item img {
-  width: 100%;
 }
 
 .content-item-figcap {
@@ -570,18 +598,9 @@ body {
   margin: 3px 0px 0px;
 }
 
-.col {
-  margin-top: 15px;
-}
-
 .col.editors-pick {
   border-top: 1px solid #000;
   margin-top: 20px;
-}
-
-.related-title a {
-  text-decoration: none;
-  color: black;
 }
 
 .most-popular {
@@ -589,22 +608,3 @@ body {
   height: 100%;
 }
 
-.most-popular .content {
-  display: flex;
-  flex-direction: column;
-  height: calc(100% - 75px);
-  justify-content: space-between;
-}
-
-.most-popular .content .content-item {
-  width: 100%;
-  border-top: 1px solid rgb(226, 226, 226);
-  padding: 15px 0;
-}
-
-.most-popular .content .content-item a {
-  font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
-  text-decoration: none;
-  color: #121212;
-  font-weight: 400;
-}
