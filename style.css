@@ -258,6 +258,19 @@ body {
 	vertical-align: middle;
 	display: block;
 }
+
+.footer-logo { position: relative; }
+
+.home-page-link {
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    text-decoration: none;
+    color: rgb(98,136,165);
+    font-size: 11px;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+}
+
 .article-footer{
 	display: flow-root;
 	width: calc(100% - 40px);
@@ -313,7 +326,6 @@ body {
 .footer-col div:last-child ul:nth-last-child(-n+2) li a {
 	font-size: 11px;
 	vertical-align: baseline;
-
 }
 
 .footer-col div:last-child ul:last-child {
@@ -321,9 +333,19 @@ body {
     padding: 10px 0 0;
     margin: 2px 0 0;
 }
+.footer-col div:last-child ul:nth-child(2) li { margin-bottom: 5px; }
+
+.footer-col div:last-child ul:nth-child(2) li a {
+    font-weight: bold;
+    font-size: 16px;
+}
 .col ul {
 	list-style: none;
 }
+
+.footer-col div:last-child ul:nth-child(2) svg { padding-right: 8px; }
+
+.footer-col { font-family: nyt-franklin, helvetica, arial, sans-serif; }
 
 .col ul h3 {
     color: rgb(51, 51, 51);
@@ -335,12 +357,21 @@ body {
     width: 150px;
 }
 
+.footer-col div:last-child h3 {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
 .col ul li a {
     text-decoration: none;
     color: #000;
     text-transform: capitalize;
     line-height: 21px;
     font-weight: 500;
+    font-size: 14px;
+    height: 23px;
+    line-height: 16px;
+    display: inline-block;
 }
 
 .col ul li a:hover {
@@ -488,7 +519,7 @@ body {
 }
 
 .col:not(.most-popular) .content .content-item {
-	width: 32%;
+	width: calc((100% - 30px)/3);
 	padding: 5px 10px 0 0;
 }
 
