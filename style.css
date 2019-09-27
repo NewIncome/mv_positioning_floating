@@ -121,6 +121,21 @@ body {
   text-decoration-color: #ccc;
 }
 
+.col ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  height: 23px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+.col ul li a:hover {
+  text-decoration: underline;
+}
+
 .article-header h5 a:hover {
   text-decoration: none;
 }
@@ -128,7 +143,7 @@ body {
 .article-header-date {
   float: left;
   font-size: 14px;
-  width: 40% ;
+  width: 40%;
 }
 
 .article-header-date p {
@@ -140,6 +155,10 @@ body {
   display: flex;
   float: right;
   width: 40%;
+}
+
+.bookmark svg {
+  vertical-align: middle;
 }
 
 .article-header-icon svg:not(.css-ubw31m) {
@@ -162,6 +181,11 @@ body {
   height: 15px;
 }
 
+.article-footer-icon svg:hover {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
 .article-header-icon svg:not(.css-ubw31m):hover {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -171,22 +195,6 @@ body {
   text-decoration: none;
   color: #000;
 }
-
-.col ul li a {
-  text-decoration: none;
-  color: #000;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 14px;
-  height: 23px;
-  line-height: 16px;
-  display: inline-block;
-}
-
-.col ul li a:hover {
-  text-decoration: underline;
-}
-
 
 .css-4brsb6:hover {
   background-color: #000;
@@ -443,15 +451,6 @@ body {
   display: flex;
   float: right;
   width: 100%;
-}
-
-.bookmark svg {
-  vertical-align: middle;
-}
-
-.article-footer-icon svg:hover {
-  background-color: #fff;
-  border: 1px solid #ccc;
 }
 
 .footer-subscribe {
