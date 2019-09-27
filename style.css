@@ -138,6 +138,13 @@ body { max-width: 100vw; }
   display: inline-block;
 }
 
+.article-right article a {
+  text-decoration: none;
+  display: flex;
+  color: rgb(51, 51, 51);
+  width: 100%;
+}
+
 .article-header h5 a:hover { text-decoration: none; }
 
 .col ul li a:hover { text-decoration: underline; }
@@ -221,9 +228,35 @@ body { max-width: 100vw; }
 
 .article-text p { margin-bottom: 0.9375rem; }
 
+.article-text h3 {
+  margin-bottom: 0.9375rem;
+  margin-top: 0.9375rem;
+}
+
+.article-right article a h3 {
+  font-size: 14px;
+  margin: auto 0 auto 10px;
+  font-weight: 500;
+}
+
+.col h3 {
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  text-transform: uppercase;
+  width: 150px;
+}
+
 .article-frame .frame-header h3 {
   font-size: 20px;
   margin-bottom: 3px;
+}
+
+.subs-col p {
+  color: #666;
+  font-size: 15px;
 }
 
 .article-frame .frame-header p { color: #666; }
@@ -318,6 +351,14 @@ body { max-width: 100vw; }
   vertical-align: baseline;
 }
 
+.footer-comments button {
+  width: 100%;
+  height: 35px;
+  color: #fff;
+  background-color: rgb(98, 136, 165);
+  border: 1px solid rgb(50, 104, 145);
+}
+
 .text-section aside button {
   background: rgb(98, 136, 165) none repeat scroll 0% 0%;
   border: 1px solid rgb(98, 136, 165);
@@ -386,20 +427,7 @@ body { max-width: 100vw; }
 
 .article-right article:hover { text-decoration: underline; }
 
-.article-right article a {
-  text-decoration: none;
-  display: flex;
-  color: rgb(51, 51, 51);
-  width: 100%;
-}
-
 .article-right article a div img { width: 75px; }
-
-.article-right article a h3 {
-  font-size: 14px;
-  margin: auto 0 auto 10px;
-  font-weight: 500;
-}
 
 .text-left-h {
   font-size: 1.125rem;
@@ -428,11 +456,6 @@ body { max-width: 100vw; }
   font-family: nyt-imperial, georgia, 'times new roman', times, serif;
   color: #333;
   margin: 0 auto 16px;
-}
-
-.article-text h3 {
-  margin-bottom: 0.9375rem;
-  margin-top: 0.9375rem;
 }
 
 .article-frame {
@@ -530,14 +553,6 @@ body { max-width: 100vw; }
   margin-top: 15px;
 }
 
-.footer-comments button {
-  width: 100%;
-  height: 35px;
-  color: #fff;
-  background-color: rgb(98, 136, 165);
-  border: 1px solid rgb(50, 104, 145);
-}
-
 .footer-comments button:hover { background-color: rgb(50, 104, 145); }
 
 .footer-col {
@@ -588,16 +603,6 @@ body { max-width: 100vw; }
 
 .footer-col div:last-child ul:nth-child(2) svg { padding-right: 8px; }
 
-.col h3 {
-  color: rgb(51, 51, 51);
-  font-size: 13px;
-  font-weight: 700;
-  height: 25px;
-  line-height: 15px;
-  text-transform: uppercase;
-  width: 150px;
-}
-
 .footer-col div:last-child h3 {
   font-size: 13px;
   margin-bottom: 5px;
@@ -635,11 +640,6 @@ body { max-width: 100vw; }
 .subs-col h2 {
   padding-bottom: 15px;
   font-size: 18px;
-}
-
-.subs-col p {
-  color: #666;
-  font-size: 15px;
 }
 
 .subs-col-form {
