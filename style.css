@@ -245,7 +245,7 @@ body { max-width: 100vw; }
 
 .article-frame .frame-grid .g1 {
   grid-column: 1/2;
-   grid-row: 2/3;
+  grid-row: 2/3;
 }
 
 .article-frame .frame-grid .g2 {
@@ -368,7 +368,7 @@ body { max-width: 100vw; }
   flex-direction: column;
   justify-content: center;
   margin: 0 10px 0 auto;
-  font-family: nyt-cheltenham-small, georgia, "times new roman";
+  font-family: nyt-cheltenham, georgia, "times new roman";
 }
 
 .aside-editors h4 {
@@ -436,7 +436,7 @@ body { max-width: 100vw; }
 }
 
 .article-frame {
-  font-family: nyt-franklin,arial,helvetica,sans-serif;
+  font-family: nyt-franklin, arial, helvetica, sans-serif;
   font-size: 14px;
   width: 945px;
   height: 752px;
@@ -444,7 +444,7 @@ body { max-width: 100vw; }
 }
 
 .article-frame .frame-header {
-  font-family: nyt-cheltenham-sh,georgia,times new roman,times,serif;
+  font-family: nyt-cheltenham-sh, georgia, times new roman ,times ,serif;
   font-size: 14px;
   height: 62px;
   margin-bottom: 10px;
@@ -647,7 +647,7 @@ body { max-width: 100vw; }
   width: 45%;
 }
 
-.subs-col-form form { position: relative;  }
+.subs-col-form form { position: relative; }
 
 .subs-col-form input[type="email"] {
   height: 30px;
