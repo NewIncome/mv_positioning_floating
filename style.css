@@ -127,6 +127,13 @@ body { max-width: 100vw; }
   text-decoration-color: #ccc;
 }
 
+.article-right article a {
+  text-decoration: none;
+  display: flex;
+  color: rgb(51, 51, 51);
+  width: 100%;
+}
+
 .col ul li a {
   text-decoration: none;
   color: #000;
@@ -136,13 +143,6 @@ body { max-width: 100vw; }
   height: 23px;
   line-height: 16px;
   display: inline-block;
-}
-
-.article-right article a {
-  text-decoration: none;
-  display: flex;
-  color: rgb(51, 51, 51);
-  width: 100%;
 }
 
 .article-header h5 a:hover { text-decoration: none; }
@@ -233,12 +233,6 @@ body { max-width: 100vw; }
   margin-top: 0.9375rem;
 }
 
-.article-right article a h3 {
-  font-size: 14px;
-  margin: auto 0 auto 10px;
-  font-weight: 500;
-}
-
 .col h3 {
   color: rgb(51, 51, 51);
   font-size: 13px;
@@ -247,6 +241,12 @@ body { max-width: 100vw; }
   line-height: 15px;
   text-transform: uppercase;
   width: 150px;
+}
+
+.article-right article a h3 {
+  font-size: 14px;
+  margin: auto 0 auto 10px;
+  font-weight: 500;
 }
 
 .article-frame .frame-header h3 {
