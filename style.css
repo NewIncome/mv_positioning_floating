@@ -116,9 +116,18 @@ body {
   top: -5px;
 }
 
+.related-article-title a {
+  text-decoration: none;
+  color: #000;
+}
+
 .article-header h5 a {
   color: #000;
   text-decoration-color: #ccc;
+}
+
+.article-header h5 a:hover {
+  text-decoration: none;
 }
 
 .col ul li a {
@@ -134,10 +143,6 @@ body {
 
 .col ul li a:hover {
   text-decoration: underline;
-}
-
-.article-header h5 a:hover {
-  text-decoration: none;
 }
 
 .article-header-date {
@@ -189,11 +194,6 @@ body {
 .article-header-icon svg:not(.css-ubw31m):hover {
   background-color: #fff;
   border: 1px solid #ccc;
-}
-
-.related-article-title a {
-  text-decoration: none;
-  color: #000;
 }
 
 .css-4brsb6:hover {
