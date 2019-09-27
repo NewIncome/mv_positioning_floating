@@ -104,21 +104,6 @@ body {
   text-decoration: none;
 }
 
-.col ul li a {
-  text-decoration: none;
-  color: #000;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 14px;
-  height: 23px;
-  line-height: 16px;
-  display: inline-block;
-}
-
-.col ul li a:hover {
-  text-decoration: underline;
-}
-
 .article-header {
   font-family: nyt-franklin, helvetica, arial, sans-serif;
   height: 70px;
@@ -143,7 +128,7 @@ body {
 .article-header-date {
   float: left;
   font-size: 14px;
-  width: 40%
+  width: 40% ;
 }
 
 .article-header-date p {
@@ -159,7 +144,16 @@ body {
 
 .article-header-icon svg:not(.css-ubw31m) {
   vertical-align: middle;
+  background-color: #eee;
+  border: 1px #eee solid;
+  border-radius: 100%;
+  padding: 5px;
   width: 15px;
+  height: 15px;
+}
+
+.article-footer-icon svg:not(.css-ubw31m) {
+  vertical-align: middle;
   background-color: #eee;
   border: 1px #eee solid;
   border-radius: 100%;
@@ -172,6 +166,27 @@ body {
   background-color: #fff;
   border: 1px solid #ccc;
 }
+
+.related-article-title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  height: 23px;
+  line-height: 16px;
+  display: inline-block;
+}
+
+.col ul li a:hover {
+  text-decoration: underline;
+}
+
 
 .css-4brsb6:hover {
   background-color: #000;
@@ -434,17 +449,6 @@ body {
   vertical-align: middle;
 }
 
-.article-footer-icon svg:not(.css-ubw31m) {
-  vertical-align: middle;
-  width: 15px;
-  background-color: #eee;
-  border: 1px #eee solid;
-  border-radius: 100%;
-  padding: 5px;
-  width: 15px;
-  height: 15px;
-}
-
 .article-footer-icon svg:hover {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -529,11 +533,6 @@ body {
 
 .related-article-title {
   font-family: nyt-cheltenham, georgia, "times new roman", times, serif;
-}
-
-.related-article-title a {
-  text-decoration: none;
-  color: #000;
 }
 
 .related-article-date {
