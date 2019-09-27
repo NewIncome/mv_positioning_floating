@@ -126,10 +126,6 @@ body {
   text-decoration-color: #ccc;
 }
 
-.article-header h5 a:hover {
-  text-decoration: none;
-}
-
 .col ul li a {
   text-decoration: none;
   color: #000;
@@ -139,6 +135,10 @@ body {
   height: 23px;
   line-height: 16px;
   display: inline-block;
+}
+
+.article-header h5 a:hover {
+  text-decoration: none;
 }
 
 .col ul li a:hover {
